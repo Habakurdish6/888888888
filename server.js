@@ -17,7 +17,7 @@ const bannedwords = ["@here", "@everyone"];
 
 const ytdl = require("ytdl-core");
 
-const prefix = "p!";
+const prefix = "z!";
 
 const queue = new Map();
 bot.on("ready", () => console.log("🤖Ready Bot In Online🤖"));
@@ -25,38 +25,38 @@ bot.on("ready", () => console.log("🤖Ready Bot In Online🤖"));
 
 
 bot.on("message", message => {
-  if (message.content === "p!dark") {
-    const embed = new Discord.RichEmbed().setColor("#000000")
+  if (message.content === "z!zangana") {
+    const embed = new Discord.RichEmbed().setColor("05FFEE")
       .setDescription(`
 
 **📝 𝗖𝗼𝗺𝗺𝗻𝗱 𝗛𝗲𝗹𝗽 𝗠𝗲𝗻𝘂**
  
-**🤖 The prefix for the bot is: ⇰ 〔 p! 〕 🤖**
+**🤖 The prefix for the bot is: ⇰ 〔 z! 〕 🤖**
 
 
-〔 **bot 🔒 〕⇰ 『 p!anti bot on  』
+〔 **bot 🔒 〕⇰ 『 z!anti bot on  』
 
-〔 bot 🔓 〕⇰ 『 p!anti bot off 』
+〔 bot 🔓 〕⇰ 『 z!anti bot off 』
 
-〔bot〕⇰  『 p!anti ban 1 -- 5 』
+〔bot〕⇰  『 z!anti ban 1 -- 5 』
 
-〔kick〕⇰ 『 p!anti ban 1 -- 5 』
+〔kick〕⇰ 『 z!anti ban 1 -- 5 』
 
-〔role〕⇰ 『 p!anti role 1 -- 5 』
+〔role〕⇰ 『 z!anti role 1 -- 5 』
 
-〔channel〕⇰『 p!anti channel 1 -- 5 』
+〔channel〕⇰『 z!anti channel 1 -- 5 』
 
-〔time〕⇰『 p!anti time  1 -- 5 』
+〔time〕⇰『 z!anti time  1 -- 5 』
 
-〔 📝 〕⇰『 p!about 』
+〔 📝 〕⇰『 z!about 』
 
-〔 ✨ 〕⇰『 p!invite   』
+〔 ✨ 〕⇰『 z!invite   』
 
-〔 ✨ 〕⇰『 p!bot 』**
+〔 ✨ 〕⇰『 z!bot 』**
 
 `)
-.setAuthor(`Max Bot `, bot.user.avatarURL)
-.setFooter(`max bot | Coded by Emir Bolat, by ᵏᵃᵏ PrOfEsSoR🇨🇳.`, bot.user.avatarURL)
+.setAuthor(`Kurdsh Security ✨ `, bot.user.avatarURL)
+.setFooter(`Kurdsh Security ✨ | Coded by , Zangana.`, bot.user.avatarURL)
 return message.channel.send(embed);
      
     message.channel.sendEmbed(embed);
@@ -70,20 +70,20 @@ bot.on("ready", () => {
 
 
 bot.on("message", message => {
-if (message.content === "p!about") {
-const embed = new Discord.RichEmbed().setColor("#000000")
+if (message.content === "z!about") {
+const embed = new Discord.RichEmbed().setColor("05FFEE")
 .setAuthor(message.guild.name, message.guild.iconURL)
 .setDescription(`
 𝗡𝗮𝗺𝗲
 
-**Security**
+**Kurdsh Security ✨**
 
 𝗜𝗗
 
-**682146815017222150**
+**639145405476503552**
 
 𝗢𝘄𝗻𝗲𝗿
-**PROFESSOR**
+**! ZANGANA | Kᴜʀᴅɪsʜ Sᴇᴄᴜʀɪᴛʏ**
 
 
 
@@ -127,8 +127,8 @@ console.log(
 let statuses = [
 ///// لێرانە شتێک بووسە بۆ ستریمینگەکە
 //// DASTKARE MAKA DACHE BGYE BEKAYTA EROR BA WRYAYI DASKARII MAKA
-`Servers: ${bot.guilds.size}| Users: ${bot.user.size}`,
-`p!help It's time to secure your server!`,
+`z!help | Kurdish Security Staff ✨`,
+`z!help | Kurdish Security Staff ✨`,
 ];
 
   setInterval(function() {
@@ -138,7 +138,7 @@ bot.user.setActivity(dnd, {
 
   
   
-type:"", 
+type:"Watching", 
 url: "https://www.twitch.tv/faith"
 });
 }, 2000);
@@ -790,14 +790,14 @@ fs.writeFile("./antibot.json", JSON.stringify(antibots), err => {
 
 
   bot.on("message", message => {
-  if (message.content === "p!invite") {
+  if (message.content === "z!invite") {
     if (!message.channel.guild)
       return message.reply(
         "Please Do not type bot commands in bot private chat"
       );
     let embed = new Discord.RichEmbed()
       .setColor("GREEN")
-      .setTitle("=--> click touch for link bot <--=")
+      .setTitle("=--> click Here To A <--=")
       .setURL(
         "https://discord.com/api/oauth2/authorize?client_id=767190881689272330&permissions=8&scope=bot"
       ) // Type Your Link here after ''
@@ -1713,5 +1713,5 @@ Maximum Time : ${config[message.guild.id].time}
   
   
   
-bot.login("NzY3MTkwODgxNjg5MjcyMzMw.X4uULw.d_behnCfIUElGmAoVV2tZtvOTvE");
+bot.login("NzU4MjA2NTc1NjIxNTcwNTgz.X2rk5g.0bsFhGCzX3tH6WXbbOFS8yY3C8E");
 
