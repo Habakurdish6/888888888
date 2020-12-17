@@ -74,16 +74,16 @@ if (message.content === "z!about") {
 const embed = new Discord.RichEmbed().setColor("05FFEE")
 .setAuthor(message.guild.name, message.guild.iconURL)
 .setDescription(`
-𝗡𝗮𝗺𝗲
+𝗡𝗮𝗺𝗲 :gem:
 
 **Kurdsh Security ✨**
 
-𝗜𝗗
+𝗜𝗗 :id:
 
-**639145405476503552**
+**758206575621570583**
 
-𝗢𝘄𝗻𝗲𝗿
-**! ZANGANA | Kᴜʀᴅɪsʜ Sᴇᴄᴜʀɪᴛʏ**
+𝗢𝘄𝗻𝗲𝗿 :hammer:
+**<@639145405476503552>**
 
 
 
