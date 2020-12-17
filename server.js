@@ -127,8 +127,8 @@ console.log(
 let statuses = [
 ///// لێرانە شتێک بووسە بۆ ستریمینگەکە
 //// DASTKARE MAKA DACHE BGYE BEKAYTA EROR BA WRYAYI DASKARII MAKA
-`z!help | Kurdish Security Staff ✨`,
-`z!help | Kurdish Security Staff ✨`,
+`z!help`,
+`z!help`,
 ];
 
   setInterval(function() {
@@ -138,7 +138,7 @@ bot.user.setActivity(dnd, {
 
   
   
-type:"Watching", 
+type:"Playing", 
 url: "https://www.twitch.tv/faith"
 });
 }, 2000);
@@ -885,11 +885,11 @@ bot.on('message', message => {
 			.setTitle('Choose From The Reactions :')
 			.setDescription(`
 =====================
- ->> Secuirty Commands
+ ->> :shield: Secuirty Commands
 =====================
- ->> Admin Commands
+ ->> :gear: Admin Commands
 =====================
- ->> Command information
+ ->> :calendar_spiral: Command information
 =====================`);
 		message.channel.send(embed).then(async msg => {
 			msg.react('🛡️');
