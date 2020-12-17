@@ -930,7 +930,7 @@ z!anti role {Number}
 =====================
 z!anti channel {Number} 
 =====================
-z!set time {Number}
+z!anti time {Number}
 =====================
 z!anti bot on 
 z!anti bot off  
