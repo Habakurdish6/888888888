@@ -932,12 +932,12 @@ E!anti channel {Number}
 =====================
 E!anti time {Number}
 =====================
-z!anti bot on 
-z!anti bot off  
+E!anti bot on 
+E!anti bot off  
 =====================
-z!stats
+E!stats
 =====================
-z!invite**
+E!invite**
 =====================
 `)
 					.setFooter(message.author.username, message.author.avatarURL)
@@ -958,31 +958,31 @@ z!invite**
 
 ==================
 **
-z!lock / z!unlok
+E!lock / z!unlok
 ===================
-z!verify
+E!verify
 ===================
-z!bot
+E!bot
 ===================
-z!id
+E!id
 ===================
-z!about
+E!about
 ===================
-z!bot voice
+E!bot voice
 ===================
-z!list bot
+E!list bot
 ===================
-z!view / z!unview
+E!view / z!unview
 ===================
-z!all bots
+E!all bots
 ===================
-z!server
+E!server
 ===================
-z!clear
+E!clear
 ===================
-z!avatar
+E!avatar
 ===================
-z!move all
+E!move all
 ===================**`)
           
 					.setFooter(message.author.username, message.author.avatarURL)
@@ -1023,7 +1023,7 @@ Auto  stop @.here
 
 
 bot.on('message', async message => {
-	if (message.content === 'z!verify') {
+	if (message.content === 'E!verify') {
     let embed = new Discord.RichEmbed()
     .setDescription('Kurdsh Security ✨ vote !!! ✅ ')
     .setColor('05FFEE')
@@ -1316,7 +1316,7 @@ bot.on("guildBanRemove", (guild, member) => {
 
 
 bot.on('message', message => {
-    var prefix = "z!"
+    var prefix = "E!"
 var args = message.content.split(" ").slice(1);    
 if(message.content.startsWith(prefix + 'id')) {
 var year = message.author.createdAt.getFullYear()
@@ -1378,7 +1378,7 @@ message.channel.send({embed});
 
  bot.on('message', message => {
 if (!message.guild) return;
-if (message.content === 'z!bot voice') {
+if (message.content === 'E!bot voice') {
 if (message.member.voiceChannel) {
 message.member.voiceChannel.join()
 .then(connection => { 
@@ -1407,7 +1407,7 @@ bot.on("message", message => {
 
 
 bot.on('message', fantic => {
-if (fantic.content === "z!unview") {
+if (fantic.content === "E!unview") {
 if (!fantic.member.hasPermission("ADMINISTRATOR")) return fantic.react(":x:")
 fantic.channel.overwritePermissions(fantic.guild.id, {
 VIEW_CHANNEL: false
@@ -1417,7 +1417,7 @@ fantic.react("🔒")
 });
 
 bot.on('message', fantic => {
-if (fantic.content === "z!view") {
+if (fantic.content === "E!view") {
 if (!fantic.member.hasPermission("ADMINISTRATOR")) return fantic.react(":x:")
 fantic.channel.overwritePermissions(fantic.guild.id, {
 VIEW_CHANNEL: true
@@ -1475,7 +1475,7 @@ tell us the reason why you kicked our bot🤖`
 
 bot.on('message', message => {
 if(!message.channel.guild) return;
-var prefix = "z!";//// بە دڵی خۆت پڕیفێکسێ بنوسە /// set prefix
+var prefix = "E!";//// بە دڵی خۆت پڕیفێکسێ بنوسە /// set prefix
 if(message.content.startsWith(prefix + 'all bots')) {
 
 
@@ -1500,7 +1500,7 @@ message.channel.send(embed)
 
 
 bot.on("message", message => {
-if (message.content.startsWith("z!server")) {
+if (message.content.startsWith("E!server")) {
 if (!message.channel.guild)
 return message.channel.send(` | This Command is used only in servers!`);
 const millis = new Date().getTime() - message.guild.createdAt.getTime();
@@ -1542,7 +1542,7 @@ message.channel.sendEmbed(embed);
 
 
 bot.on("message", message => {
-if (message.content.split(" ")[0].toLowerCase() === "z!clear") {
+if (message.content.split(" ")[0].toLowerCase() === "E!clear") {
 const word = message.content;
 const number = word.slice(7, word.length);
 const int = Number(number);
@@ -1601,7 +1601,7 @@ bot.on("message", message => {
 
 
 bot.on("message", message => {
-if (message.content.startsWith("z!move all")) {
+if (message.content.startsWith("E!move all")) {
 if (!message.guild.member(bot.user).hasPermission("SEND_MESSAGES"))
 return message.reply("```You don't have enough permissions```")
 if (message.member.voiceChannel == null)
@@ -1713,5 +1713,5 @@ Maximum Time : ${config[message.guild.id].time}
   
   
   
-bot.login("NzU4MjA2NTc1NjIxNTcwNTgz.X2rk5g.0bsFhGCzX3tH6WXbbOFS8yY3C8E");
+bot.login("Nzg5NDEyMjAyNDcyODAwMjY2.X9xrZw.VczoQqHYlNtxQT91odDu-RPg9sE");
 
