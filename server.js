@@ -17,7 +17,7 @@ const bannedwords = ["@here", "@everyone"];
 
 const ytdl = require("ytdl-core");
 
-const prefix = "z!";
+const prefix = "E!";
 
 const queue = new Map();
 bot.on("ready", () => console.log("🤖Ready Bot In Online🤖"));
@@ -70,20 +70,20 @@ bot.on("ready", () => {
 
 
 bot.on("message", message => {
-if (message.content === "z!about") {
+if (message.content === "E!about") {
 const embed = new Discord.RichEmbed().setColor("05FFEE")
 .setAuthor(message.guild.name, message.guild.iconURL)
 .setDescription(`
 𝗡𝗮𝗺𝗲
 
-**Kurdsh Security ✨**
+**𝑫𝑨𝑳 𝑲𝑼𝑹𝑫 𝑮𝑰𝑴𝑬𝑵𝑮**
 
-𝗜𝗗
+OWNER 𝗜𝗗
 
-**639145405476503552**
+**727642219938316318**
 
 𝗢𝘄𝗻𝗲𝗿
-**! ZANGANA | Kᴜʀᴅɪsʜ Sᴇᴄᴜʀɪᴛʏ**
+**! 𝔻𝕂 x ᵈᵃᵈᵃ𝗕𝗘𝗔𝗥**
 
 
 
@@ -127,8 +127,8 @@ console.log(
 let statuses = [
 ///// لێرانە شتێک بووسە بۆ ستریمینگەکە
 //// DASTKARE MAKA DACHE BGYE BEKAYTA EROR BA WRYAYI DASKARII MAKA
-`z!help`,
-`z!help`,
+`E!help |ᵈᵃᵈᵃ𝗕𝗘𝗔𝗥,𝚊𝚗𝚍,𝗭𝗔𝗡𝗚𝗔𝗡𝗔,𝚊𝚗𝚍,ᵐᵃᵐ𝗘𝘃𝗶𝗹`,
+`E!help |ᵈᵃᵈᵃ𝗕𝗘𝗔𝗥,𝚊𝚗𝚍,𝗭𝗔𝗡𝗚𝗔𝗡𝗔,𝚊𝚗𝚍,ᵐᵃᵐ𝗘𝘃𝗶𝗹`,
 ];
 
   setInterval(function() {
@@ -790,7 +790,7 @@ fs.writeFile("./antibot.json", JSON.stringify(antibots), err => {
 
 
   bot.on("message", message => {
-  if (message.content === "z!invite") {
+  if (message.content === "E!invite") {
     if (!message.channel.guild)
       return message.reply(
         "Please Do not type bot commands in bot private chat"
@@ -825,7 +825,7 @@ bot.on('message', message => {
            .addField('``My Prefix``' , `[ z!
 ]` , true)
            .addField('``Bot Version``' , `[ v0.1 ]` , true)
-           .setFooter('Made By | Zangana')
+           .setFooter('Made By | ᵈᵃᵈᵃ𝗕𝗘𝗔𝗥,𝚊𝚗𝚍,𝗭𝗔𝗡𝗚𝗔𝗡𝗔')
   })
   }
   });
@@ -836,7 +836,7 @@ bot.on('message', message => {
 
 bot.on("message", message => {
 let ToOFaN
-if (message.content === "z!lock") {
+if (message.content === "E!lock") {
 if (!message.channel.guild)
 return message.reply("This command is only for servers");
 if (!message.member.hasPermission("MANAGE_MESSAGES"))
@@ -850,7 +850,7 @@ message.reply("**🔒 locked channel 🔒**");
 });
 }
 
-if (message.content === "z!unlock") {
+if (message.content === "E!unlock") {
 if (!message.channel.guild)
 return message.reply("** This command is only for servers**");
 if (!message.member.hasPermission("MANAGE_MESSAGES"))
@@ -923,14 +923,14 @@ bot.on('message', message => {
 ** {Secuirty Commands} **
 
 =====================**
-z!anti kick  {Number}
-z!anti ban  {Number} 
+E!anti kick  {Number}
+E!anti ban  {Number} 
 =====================
-z!anti role {Number} 
+E!anti role {Number} 
 =====================
-z!anti channel {Number} 
+E!anti channel {Number} 
 =====================
-z!anti time {Number}
+E!anti time {Number}
 =====================
 z!anti bot on 
 z!anti bot off  
