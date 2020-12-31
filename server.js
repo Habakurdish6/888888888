@@ -1712,4 +1712,4 @@ Maximum Time : ${config[message.guild.id].time}
 
   
   
-bot.lohin("bot")
+bot.login("bot")
